@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record Message Outcome"
+  short_description: "Record and retrieve messaging outcomes safely"
+  default_prompt: "Use $record-message-outcome to log the message I sent and its actual outcome as a validated learning case."

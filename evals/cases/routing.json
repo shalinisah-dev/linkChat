@@ -1,0 +1,14 @@
+[
+  { "id": "route-profile-explicit", "prompt": "Form a recipient profile from the new LinkedIn captures.", "required_skills": ["form-recipient-profile"] },
+  { "id": "route-profile-implicit", "prompt": "What communication style does the latest activity support before I write?", "required_skills": ["form-recipient-profile"] },
+  { "id": "route-profile-conflict", "prompt": "The posts and comments point in different directions; resolve that conservatively.", "required_skills": ["form-recipient-profile"] },
+  { "id": "route-profile-negative", "prompt": "Explain how the browser extension stores a capture.", "forbidden_skills": ["form-recipient-profile", "record-message-outcome"] },
+  { "id": "route-outcome-reply", "prompt": "They replied to yesterday's DM. Log the result.", "required_skills": ["record-message-outcome"] },
+  { "id": "route-outcome-meeting", "prompt": "That message led to a meeting; remember what happened.", "required_skills": ["record-message-outcome"] },
+  { "id": "route-outcome-no-reply", "prompt": "No response after 14 days. Record that outcome.", "required_skills": ["record-message-outcome"] },
+  { "id": "route-outcome-retrieve", "prompt": "What has worked in comparable outreach cases?", "required_skills": ["record-message-outcome"] },
+  { "id": "route-outcome-negative", "prompt": "Draft a first message with no past outcome to log.", "forbidden_skills": ["record-message-outcome"] },
+  { "id": "route-profile-typo", "prompt": "profle this recipent frm the latest commnts", "required_skills": ["form-recipient-profile"] },
+  { "id": "route-multi-intent", "prompt": "Refresh the profile, retrieve similar outcomes, then draft three options.", "required_skills": ["form-recipient-profile", "record-message-outcome"] },
+  { "id": "route-raw-request", "prompt": "Show me all the raw text you captured.", "required_skills": [], "forbidden_skills": ["record-message-outcome"] }
+]

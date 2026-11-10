@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>LinkChat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="brand-mark" aria-hidden="true">L</div>
+        <div>
+          <p class="eyebrow">THOUGHTFUL OUTREACH</p>
+          <h1>LinkChat</h1>
+          <p class="tagline">Understand the person. Write a better message.</p>
+        </div>
+      </header>
+
+      <section class="composer-card" aria-labelledby="composer-heading">
+        <p class="eyebrow">CURRENT LINKEDIN PAGE</p>
+        <h2 id="composer-heading" class="hero-heading">What do you want to say?</h2>
+        <p class="hero-copy">Choose the outcome. LinkChat reads the page, chooses an appropriate approach, and writes options.</p>
+
+        <label class="field">
+          <span>Outcome</span>
+          <select id="outreachGoal">
+            <option value="mentorship">Ask for mentorship</option>
+            <option value="informational-interview">Request an informational interview</option>
+            <option value="interview-candidate">Interview this person</option>
+            <option value="hire-candidate">Recruit or hire this person</option>
+            <option value="job-opportunity">Ask about a role or opportunity</option>
+            <option value="partnership">Explore a partnership</option>
+            <option value="customer-discovery">Request customer or product feedback</option>
+            <option value="networking">Start a professional connection</option>
+            <option value="reconnect">Reconnect</option>
+            <option value="other">Something else</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Anything else? <span class="optional">optional</span></span>
+          <textarea id="outreachDetails" maxlength="800" rows="4" placeholder="What you have in common, a constraint, a specific ask, or the tone you want…"></textarea>
+        </label>
+
+        <button id="createButton" class="button button-primary hero-action" type="button">
+          Create DM options
+        </button>
+        <p class="privacy-line">Only when you click: visible page context is processed to create this draft, is not shown back to you, and is not saved by LinkChat.</p>
+
+        <div id="progressBanner" class="banner banner-progress hidden" role="status" aria-live="polite"></div>
+        <div id="errorBanner" class="banner banner-error hidden" role="alert"></div>
+      </section>
+
+      <section id="resultSection" class="result-section hidden" aria-labelledby="result-heading">
+        <div class="result-heading-row">
+          <div>
+            <p class="eyebrow">READY TO EDIT</p>
+            <h2 id="result-heading" class="hero-heading small">DM options</h2>
+          </div>
+          <span id="approachBadge" class="approach-badge"></span>
+        </div>
+        <p id="recipientAnalysis" class="analysis"></p>
+        <p id="approachReason" class="approach-reason"></p>
+        <div id="draftList" class="draft-list"></div>
+        <p class="send-note">Review and edit before sending. LinkChat never sends for you.</p>
+      </section>
+
+      <footer><span>Review before sending</span><span aria-hidden="true">•</span><span>No saved profile data</span></footer>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="sidepanel.js"></script>
+  </body>
+</html>

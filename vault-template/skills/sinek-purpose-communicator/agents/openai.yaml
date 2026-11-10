@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sinek Purpose Communicator"
+  short_description: "Lead with a shared professional belief"
+  default_prompt: "Use $sinek-purpose-communicator for a mission-led message."

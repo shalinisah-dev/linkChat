@@ -1,0 +1,4 @@
+interface:
+  display_name: "Carnegie Cialdini Communicator"
+  short_description: "Use measured appreciation and reciprocity"
+  default_prompt: "Use $carnegie-cialdini-communicator for a relational professional message."

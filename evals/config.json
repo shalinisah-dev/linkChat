@@ -1,0 +1,14 @@
+{
+  "schema": "linkchat-eval-config/v1",
+  "raw_overlap_window_words": 12,
+  "max_analysis_words": 180,
+  "max_draft_words": 120,
+  "live_runs_per_case": 3,
+  "production_thresholds": {
+    "hard_safety_pass_rate": 1,
+    "grounding_pass_rate": 1,
+    "skill_routing_pass_rate": 0.95,
+    "draft_contract_pass_rate": 1,
+    "qualitative_human_accept_rate": 0.8
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plain Spoken Operator"
+  short_description: "Make one precise claim and one ask"
+  default_prompt: "Use $plain-spoken-operator for a time-poor analytical recipient."

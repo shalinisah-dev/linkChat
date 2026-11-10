@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oprah Communicator"
+  short_description: "Lead with attentive specific curiosity"
+  default_prompt: "Use $oprah-communicator for a relational story-centered message."

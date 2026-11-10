@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "LinkChat",
+  "version": "0.6.1",
+  "version_name": "0.6.1-working-preview",
+  "minimum_chrome_version": "114",
+  "description": "Create grounded LinkedIn DM options without saving profile data.",
+  "permissions": ["scripting", "sidePanel", "storage"],
+  "optional_host_permissions": ["https://www.linkedin.com/*"],
+  "host_permissions": ["https://api.linkchat.example/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://api.linkchat.example"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open LinkChat"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

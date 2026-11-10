@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Example Recipient | LinkedIn</title></head>
+  <body>
+    <main>
+      <h1>Example Recipient</h1>
+    </main>
+    <pre id="result"></pre>
+    <script type="module">
+      import { extractVisibleProfile } from "../src/page-capture.js";
+      const params = new URLSearchParams(location.search);
+      const kind = params.get("kind") || "posts";
+      if (!params.has("empty")) {
+        const main = document.querySelector("main");
+        for (let index = 1; index <= 12; index += 1) {
+          const card = document.createElement("article");
+          card.className = "feed-shared-update-v2";
+          card.textContent = `Activity card ${index} contains distinct professional evidence about product decisions, customer research, and communication style.`;
+          main.append(card);
+        }
+      }
+      document.querySelector("#result").textContent = JSON.stringify(extractVisibleProfile(kind));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voss Communicator"
+  short_description: "Apply tactical empathy without manipulation"
+  default_prompt: "Use $voss-communicator to draft a concise message with calibrated empathy."

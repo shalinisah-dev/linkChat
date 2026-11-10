@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brene Brown Communicator"
+  short_description: "Name friction with clear restrained candor"
+  default_prompt: "Use $brene-brown-communicator for a candid message that carries friction."

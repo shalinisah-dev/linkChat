@@ -1,0 +1,4 @@
+interface:
+  display_name: "Steve Jobs Communicator"
+  short_description: "Express a simple decisive point of view"
+  default_prompt: "Use $steve-jobs-communicator for a product-minded concise message."

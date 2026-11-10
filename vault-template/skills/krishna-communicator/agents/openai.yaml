@@ -1,0 +1,4 @@
+interface:
+  display_name: "Krishna Communicator"
+  short_description: "Connect an ask to purpose and duty"
+  default_prompt: "Use $krishna-communicator to draft a purpose-led message without attachment."

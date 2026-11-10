@@ -1,0 +1,4 @@
+interface:
+  display_name: "Barack Obama Communicator"
+  short_description: "Build common ground with calm authority"
+  default_prompt: "Use $barack-obama-communicator for a high-stakes multi-party message."

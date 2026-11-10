@@ -1,0 +1,21 @@
+{
+  "name": "linkchat",
+  "version": "0.6.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check service-worker.js && node --check sidepanel.js && node --check src/api-client.js && node --check src/dm-agent.js && node --check src/local-draft.js && node --check src/page-capture.js && node --check src/security.js && node --check backend/worker.js",
+    "eval": "node evals/run-evals.mjs",
+    "eval:live": "node evals/run-live-evals.mjs --execute",
+    "review": "node scripts/review/all.mjs",
+    "review:security": "node scripts/review/security.mjs",
+    "review:performance": "node scripts/review/performance.mjs",
+    "review:reliability": "node scripts/review/reliability.mjs",
+    "verify": "pnpm run check && pnpm test && pnpm run review && pnpm run eval",
+    "verify:release": "pnpm run verify && node scripts/smoke-hosted.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

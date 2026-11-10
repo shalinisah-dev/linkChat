@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kautilya Communicator"
+  short_description: "Preserve leverage and mutual gain"
+  default_prompt: "Use $kautilya-communicator to frame a strategic peer-to-peer message."

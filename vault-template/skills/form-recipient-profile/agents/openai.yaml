@@ -1,0 +1,4 @@
+interface:
+  display_name: "Form Recipient Profile"
+  short_description: "Synthesize evidence-backed recipient profiles"
+  default_prompt: "Use $form-recipient-profile to synthesize the newest profile and activity captures into a recipient profile."
